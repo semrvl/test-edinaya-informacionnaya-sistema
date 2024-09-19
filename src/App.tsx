@@ -7,7 +7,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const AppContainer = styled.div`
   font-family: Arial, sans-serif;
-
 `;
 
 const ContentContainer = styled.div`

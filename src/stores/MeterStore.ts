@@ -24,8 +24,6 @@ const MeterStore = types
         const response = yield fetchMeters(page);
         const data = response.data;
 
-        console.log('data', data);
-
         if (data && Array.isArray(data.results)) {
           const meterPromises = data.results.map((meter: any) => {
             return areaStore.fetchArea(meter.area.id).then(() => {
